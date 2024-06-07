@@ -1,0 +1,336 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.interview-card {
+  display: flex;
+  position: relative;
+  justify-content: space-between; /* Corrected value */
+  border: 2px solid #fbfcfe;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.interview-card:hover {
+  background-color: #dcf9e3;
+  border-color: #a6d0b0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.view-history{
+  color: #01ed96;
+  font-weight: 500;
+  justify-content: column;
+}
+
+.text{
+  justify-self: flex-start;
+}
+
+
+.card {
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+.options-menu {
+  position: relative;
+  display: inline-block; /* Display as inline-block to make the dots appear vertically */
+  cursor: pointer;
+}
+
+.options-menu span {
+  font-size: 21px;
+
+  line-height: 1.6; /* Adjust line height for vertical alignment */
+}
+
+.options-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position dropdown below the dots */
+  left: 0;
+  right: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+
+  z-index: 10;
+}
+
+.options-menu:hover .options-dropdown {
+  display: block;
+}
+
+.options-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.options-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.other-date-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+span {
+  font-size: 21px;
+  display: block;
+  text-align: left;
+}
+.candidate-info {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+strong {
+  padding: 10px;
+  font-weight: 10;
+}
+.position {
+  font-weight: 5px;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 1px;
+  margin-top: 15px;
+  
+  
+}
+.join-now {
+  display: flex;
+  align-items: center;
+}
+
+.join-now strong {
+  margin-right: 10px; /* Adjust the spacing between time and buttons */
+}
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.view-history-btn {
+  background-color: transparent;
+  color: rgb(6, 247, 30);
+  border: none;
+  margin-right: 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s, font-weight 0.3s; /* Adding transition for smooth effect */
+}
+
+.view-history-btn:hover {
+  color: #333; /* Change color on hover to a different color, adjust as needed */
+  font-weight: bold; /* Make text bold on hover */
+}
+
+
+.options-menu {
+  margin-left: auto; /* Push the options-menu to the right */
+}
+
+.options-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+    left: auto;
+}
+
+.options-dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+
+  
+}
+
+.options-dropdown li:hover {
+  background-color: #ddd;
+}
+.a {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+a:hover {
+  background-color: rgb(24, 204, 72);
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: Add responsive styles */
+@media only screen and (max-width: 768px)  {
+  .card {
+    width: 90%;
+  }
+}
+.input {
+  max-width: 190px;
+  width: 100px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 15px 5px 10px 20px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #ffffff;
+  border-radius: 25px;
+}
+
+.input::placeholder {
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.input:focus::placeholder {
+  color: #999;
+}
+
+.buttons {
+  font-size: 14px;
+  padding: 1.3em 3em;
+  
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.buttons:active {
+  transform: translateY(-1px);
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
+  color: white;
+}
+
+
+.container .label {
+  font-size: 15px;
+  padding-left: 10px;
+  position: absolute;
+  top: 13px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0px 7px;
+  border-radius: 6px;
+  color: #000000;
+  font-size: 15px;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:focus {
+  border: 2px solid transparent;
+  color: #000000;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  inset 3px 3px 10px rgba(0,0,0,1),
+  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.container .input:valid ~ .label,
+.container .input:focus ~ .label {
+  transition: 0.3s;
+  padding-left: 2px;
+  transform: translateY(-35px);
+}
+
+.container .input:valid,
+.container .input:focus {
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  inset 3px 3px 10px rgba(0,0,0,1),
+  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.see-all{
+  display: flex;
+  justify-content: space-between;
+}
+
+
